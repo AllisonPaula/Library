@@ -1,0 +1,127 @@
+
+.lists {
+    background-color: var(--color-yellow);
+    padding: 90px;
+}
+
+.lists h2 {
+    font-size: 30px;
+    color: var(--color-black);
+    text-align: center;
+    padding: 2px;
+}
+
+/*logo*/
+
+.lib-logo {
+    display: flex;
+   align-items: center;
+   margin: 10px;
+}
+
+.lib-logo img {
+    width: 100px;
+    height: 100px;
+    padding: 3px;
+    
+}
+
+.lib-logo h1 {
+    font-size: 50px;
+    padding-left: 2px;
+    color: var(--color-blue);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-bottom: 3px;
+}
+
+/*libros*/
+.container {
+    max-width: 1200px; /* Para asegurar que los libros se muestren correctamente en pantallas grandes */
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    overflow-y: auto;
+}
+
+.book {
+   
+    border: black;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px var(--color--tierra);
+    flex-basis: calc(30% - 10px);
+    transition: cursor 0.3s ease;
+}
+.book:hover{
+    cursor: pointer;
+    background-color: var(--color--tierra);
+    color: var(--color-white);
+}
+
+
+.book img {
+    max-width: 55%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.icon{
+    width: 25px;
+    height: 25px;
+}
+.icon:hover{
+   
+}
+.book h2 {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+.book p {
+    margin: 5px 0;
+}
+.book-price {
+    font-weight: bold;
+    font-size: 19px;
+}
+/*Barra de Busqueda*/
+.start {
+
+    text-align: end;
+    padding: 10px; 
+}
+.start-search {
+    padding: 10px; 
+    border: 1px solid var(--color-gray-ligth); 
+    border-radius: 5px; 
+    width: 300px; 
+    font-size: 16px; 
+    outline: none;
+}
+
+.start-search::placeholder {
+    color: var(--color-blue-second); 
+}
+/*Sobre nosotros*/
+
+.about{
+    background-image: url(/imagenes/library.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px;
+    color: var(--color-white);
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+.about-us{
+    background-color: var(--color-black);
+    opacity: 0.8;
+    padding: 5px;
+    border-radius: 5%;
+}
+

@@ -1,0 +1,17 @@
+main {
+    padding: 10px;
+  }
+#table_author{
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  #table_author th, #table_author td {
+    border: 1px solid var(--color-gray-ligth);
+    padding: 8px;
+  }
+  
+  #table_author th {
+    background-color: var(--color-white);
+    text-align: center;  
+  }

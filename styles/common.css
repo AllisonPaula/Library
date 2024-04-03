@@ -1,0 +1,169 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*Menu*/
+
+header {
+    background-color: var(--color-white);
+}
+
+.nav_var {
+    padding: 10px 0;
+    font-size: 18px;
+}
+
+.nav_var nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0;
+}
+
+.nav_var nav ul li {
+    margin-right: 20px;
+    color: var(--color--tierra);
+}
+
+.nav_var nav ul li a {
+    text-decoration: none;
+    color: var(--bs-white);
+    transition: color 0.3s;
+}
+
+.nav_var nav ul li a:hover {
+    color: var(--color-yellow);
+    font-weight: bold;
+}
+
+.nav-link.active {
+    color: var(--color-yellow);
+    font-weight: bold;
+}
+
+/*logo*/
+
+.lib-logo {
+    display: flex;
+   align-items: center;
+   margin: 10px;
+}
+
+.lib-logo img {
+    width: 100px;
+    height: 100px;
+    padding: 3px;
+    
+}
+
+.lib-logo h1 {
+    font-size: 50px;
+    padding-left: 2px;
+    color: var(--color-blue);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-bottom: 3px;
+}
+
+/*Buscador*/
+.start {
+
+    text-align: end;
+    padding: 10px; 
+}
+.start-search {
+    padding: 10px; 
+    border: 1px solid var(--color-gray-ligth); 
+    border-radius: 5px; 
+    width: 300px; 
+    font-size: 16px; 
+    outline: none;
+}
+
+.start-search::placeholder {
+    color: var(--color-blue-second); 
+}
+
+/*Footer*/
+
+
+footer {
+    background-color:var(--color-white);
+    color:var(--color-black);
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.footer_menu {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.footer_menu a {
+    color: var(--color-black);
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer_menu a:hover {
+    text-decoration: none;
+    color: var(--color--tierra);
+    font-size: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.footer_contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.footer_contact img {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+
+.footer_contact span {
+    font-size: 14px;
+}
+
+/*Tablas para filtrar*/
+#consulta {
+    background-color: var(--color-yellow);
+    border-radius: 10px;
+    padding: 60px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #consulta h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 25px;
+  }
+
+
+/* Estilos para la barra de desplazamiento */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f2f2f2;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-blue);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var( --color--tierra);
+}

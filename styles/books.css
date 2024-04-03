@@ -1,0 +1,18 @@
+main {
+    padding: 10px;
+  }
+  
+#table_books {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  #table_books th, #table_books td {
+    border: 1px solid var(--color-gray-ligth);
+    padding: 8px;
+  }
+  
+  #table_books th {
+    background-color: var(--color-white);
+    text-align: center;  
+  }
