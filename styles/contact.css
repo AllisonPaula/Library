@@ -12,6 +12,13 @@ body {
     border-radius: 10px;
     
 }
+.comment{
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 10px;
+    background-color: var(--color--tierra);
+}
 
 .form-group {
     margin-bottom: 20px;
@@ -53,4 +60,36 @@ body {
 .form-group input[type="submit"]:hover {
     background-color: var(--color--tierra);
     color: var(--color-white);
+}
+
+
+#table_comments {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#table_comments th,
+#table_comments td {
+    border: 1px solid var(--color-gray-ligth);
+    padding: 8px;
+}
+
+#table_comments th {
+    background-color: var(--color-white);
+    color: var(--color-black);
+}
+
+#table_comments td {
+    background-color: var(--color-white);
+}
+
+#table_comments tr:nth-child(even) {
+    background-color: var(--color-gray-ligth);
+}
+
+#table_comments tr:hover {
+    background-color: var(--color--tierra);
+    color: var(--color-white);
+    cursor: pointer;
 }

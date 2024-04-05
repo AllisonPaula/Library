@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/cart.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+
+    <title>Carrito de Compras</title>
+</head>
+<body>
+    <header>
+        <div class="lib">
+            <div class="lib-logo">
+                <img src="imagenes/libraryy.png" alt="Logo Libreria">
+                <h1>LIBRERÍA BERNALLIS</h1>
+            </div>
+            <div class="start">
+                <input class="start-search" type="search" placeholder="Buscar">
+            </div>
+            <div class="nav_var">
+                <nav class="navbar">
+                    <ul class="navbar-nav">
+                        <li><a href="index.html" class="nav-link">Inicio</a></li>
+                        <li class="nav-item">
+                            <a href="books.html" class="nav-link">Libros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="authors.html" class="nav-link">Autores</a>
+                        </li>
+                        <li><a href="cart.html" class="nav-link active" >Carrito</a></li>
+
+                        <li><a href="contact.html" class="nav-link">Comentarios</a></li>
+                    </ul>
+                </nav>
+            </div>
+    </header>
+    <section class="carts">
+    <h1>Carrito de Compras</h1>
+    <ul id="cartList"></ul>
+    </section>
+    <footer>
+        <div class="footer_menu">
+            <a href="index.html">Inicio</a>
+            <a href="books.html">Libros</a>
+            <a href="authors.html">Autor</a>
+            <a href="cart.html">Carrito</a>
+            <a href="contact.html">Comentarios</a>
+        </div>
+        <div class="footer_contact">
+            <img src="imagenes/instagram.png" alt="logo Instagram">
+            <span>@bernallis_libreria</span>
+        </div>
+        <div class="footer_copy">
+            <p>&copy; 2024 Libreria Bernallis</p>
+            <p>Todos los derechos reservados</p>
+        </div>
+    </footer>
+    <script>
+        window.onload = function () {
+            var cartItems = localStorage.getItem('cartItems');
+            if (cartItems) {
+                cartItems = JSON.parse(cartItems);
+                var cartList = document.getElementById('cartList');
+                cartItems.forEach(function (book) {
+                    var listItem = document.createElement('li');
+                    listItem.textContent = book.title + ' - ' + book.author + ' - $' + book.price;
+                    cartList.appendChild(listItem);
+                });
+            }
+        }
+    </script>
+    <script src="script/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</body>
+
+</html>

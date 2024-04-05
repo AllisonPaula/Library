@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="styles/common.css">
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="stylesheet" href="styles/author.css">
+  <link rel="stylesheet" href="styles/responsive.css">
+
 </head>
 
 <body>
@@ -27,8 +29,8 @@
                     <li class="nav-item">
                         <a href="authors.html" class="nav-link active">Autores</a>
                     </li>
-                    <li><a href="shop.html" class="nav-link">Compra</a></li>
-                    <li><a href="contact.html" class="nav-link">Contacto</a></li>
+                    <li><a href="cart.html" class="nav-link" >Carrito</a></li>
+                    <li><a href="contact.html" class="nav-link">Comentarios</a></li>
                 </ul>
             </nav>
         </div>
@@ -37,7 +39,7 @@
     <section id="consulta">
       <h2>Lista de Autores</h2>
       <div class="start">
-        <input class="start-search" type="search" placeholder="Buscar">
+        <input class="start-search" type="search" id="author_search_input" placeholder="Buscar por autor">
       </div>
       <table id="table_author">
         <thead>
@@ -48,28 +50,31 @@
             <th>Cantidad de Libros</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody>           
         </tbody>
       </table>
     </section>
   </main>
   <footer>
     <div class="footer_menu">
-      <a href="index.html">Inicio</a>
-      <a href="books.html">Libros</a>
-      <a href="authors.html">Autor</a>
-      <a href="contact.html">Contacto</a>
+        <a href="index.html">Inicio</a>
+        <a href="books.html">Libros</a>
+        <a href="authors.html">Autor</a>
+        <a href="cart.html">Carrito</a>
+        <a href="contact.html">Comentarios</a>
     </div>
     <div class="footer_contact">
-      <img src="imagenes/instagram.png" alt="logo Instagram">
-      <span>@bernallis_libreria</span>
+        <img src="imagenes/instagram.png" alt="logo Instagram">
+        <span>@bernallis_libreria</span>
     </div>
     <div class="footer_copy">
-      <p>&copy; 2024 Libreria Bernallis</p>
-      <p>Todos los derechos reservados</p>
-  </div>
-  </footer>
-  <script src="javaScript/script.js"></script>
+        <p>&copy; 2024 Libreria Bernallis</p>
+        <p>Todos los derechos reservados</p>
+    </div>
+</footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="/script/script.js"></script>
 </body>
 
 </html>

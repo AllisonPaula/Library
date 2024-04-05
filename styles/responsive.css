@@ -1,0 +1,35 @@
+@media screen and (max-width: 768px) {
+    .lib-logo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .lib-logo img {
+        margin-bottom: 10px;
+    }
+
+    .nav_var nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav_var nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+.nav_var {
+    font-size: 15px;
+}
+    .start {
+        text-align: center;
+    }
+
+    .start-search {
+        width: 100%;
+    }
+
+    .footer_menu {
+        flex-direction: column;
+    }
+}
+

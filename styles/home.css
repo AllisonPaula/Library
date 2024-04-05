@@ -73,9 +73,7 @@
     width: 25px;
     height: 25px;
 }
-.icon:hover{
-   
-}
+
 .book h2 {
     margin-top: 0;
     font-size: 20px;
@@ -125,3 +123,34 @@
     border-radius: 5%;
 }
 
+
+/*responsividad*/
+
+@media screen and (max-width: 1024px) {
+    .book {
+        width: calc(33.33% - 20px); /* Ajusta el ancho de cada libro para mostrar tres libros por fila */
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .book {
+        flex-basis: calc(100% - 20px); /* Ajusta el ancho para mostrar dos libros por fila */
+    }
+    .texthide {
+        display: none;
+    }
+    .about{
+        padding: 30px;
+    }
+    .about-us{
+font-size: 14px;
+padding: 2px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .book {
+        flex-basis: calc(100% - 20px); /* Ajusta el ancho para que cada libro ocupe toda la fila */
+    }
+}
